@@ -1,0 +1,9 @@
+<script>
+    let url = 'https://raw.githubusercontent.com/franconmvp/archivos/main/url';   
+    fetch(url)
+    .then(response => response.text())
+    .then(data => {
+        const json = JSON.parse(data);   
+        window.location.href=json.url
+    });   
+</script>
